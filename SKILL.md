@@ -1,6 +1,6 @@
 ---
 name: wandering-witch-characters
-description: Character skill cards distilled from the Wandering Witch / Majo no Tabitabi book corpus. Use when Codex needs to write, roleplay, analyze, remix, or maintain character-consistent behavior, dialogue, relationships, and narrative functions for characters such as Elaina, Saya, Fran, Sheila, Amnesia, Avilia, Mina, Nike/Victorica, Liliel, Annelotte, Priscilla, Matryoshika, Selena, Vivian, or Mirarose.
+description: Character skill cards distilled from the Wandering Witch / Majo no Tabitabi book corpus. Use when Claude needs to write, roleplay, analyze, remix, or maintain character-consistent behavior, dialogue, relationships, and narrative functions for characters such as Elaina, Saya, Fran, Sheila, Amnesia, Avilia, Mina, Nike/Victorica, Liliel, Annelotte, Priscilla, Matryoshika, Selena, Vivian, or Mirarose.
 ---
 
 # Wandering Witch Characters

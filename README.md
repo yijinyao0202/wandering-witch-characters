@@ -1,6 +1,6 @@
-# 魔女之旅角色 Skill
+# 魔女之旅角色 Claude Code Skill
 
-这是一个 Agent Skill / Codex Skill，内容来自本地《魔女之旅》书籍语料的角色蒸馏结果。
+这是一个 Claude Code / Agent Skills 格式的 skill，内容来自本地《魔女之旅》书籍语料的角色蒸馏结果。
 
 仓库只包含高层角色模型和写作约束，不包含原书文本。适合用来做角色一致性的写作、角色扮演、剧情分析、二创辅助和人物关系校准。
 
@@ -32,30 +32,46 @@
 
 ## 安装
 
-把这个目录 clone 或复制到 Codex 的 skill 目录，然后重启 Codex，让它重新加载 skill 元数据。
+把这个仓库 clone 或复制到 Claude Code 的 skill 目录。Claude Code 会把目录名作为 slash command，也就是 `/wandering-witch-characters`。
 
-常见位置：
+个人全局安装：
 
-```text
-$CODEX_HOME/skills/wandering-witch-characters
-~/.codex/skills/wandering-witch-characters
+```bash
+git clone https://github.com/yijinyao0202/wandering-witch-characters ~/.claude/skills/wandering-witch-characters
 ```
 
-显式调用：
+项目级安装：
+
+```bash
+mkdir -p .claude/skills
+git clone https://github.com/yijinyao0202/wandering-witch-characters .claude/skills/wandering-witch-characters
+```
+
+在 Claude Code 里显式调用：
 
 ```text
-$wandering-witch-characters
+/wandering-witch-characters
 ```
 
 也可以直接自然语言要求“按魔女之旅角色一致性写作”。
 
 ## 设计
 
-这个 skill 按 Agent Skills 的方式组织：
+这个 skill 按 Claude Code / Agent Skills 的方式组织：
 
 - `SKILL.md` 只保留触发描述和核心流程。
 - 详细角色资料放在 `references/`，需要时再加载。
 - 每张角色卡都按“核心、能力、行动算法、语气、关系锚点、使用边界”组织。
+
+目录结构符合 Claude Code skill 约定：
+
+```text
+wandering-witch-characters/
+├── SKILL.md
+└── references/
+    ├── character-index.md
+    └── characters/
+```
 
 ## 版权说明
 
