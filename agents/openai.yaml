@@ -1,0 +1,7 @@
+interface:
+  display_name: "Wandering Witch Characters"
+  short_description: "Character-consistent writing cards for Wandering Witch roles"
+  default_prompt: "Use $wandering-witch-characters to write a character-consistent scene with Elaina and Saya."
+
+policy:
+  allow_implicit_invocation: true

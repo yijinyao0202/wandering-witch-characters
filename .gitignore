@@ -1,0 +1,9 @@
+.DS_Store
+Thumbs.db
+*.tmp
+*.log
+
+# Keep this repository to the distilled skill only.
+/source-books/
+/魔女之旅/
+/distilled_skills/
